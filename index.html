@@ -33,7 +33,7 @@
 
                 <br>
 
-                <button type="reset" class="btn btn-danger" onclick="tenks()">Meal Price</button>
+                <button type="reset" class="btn btn-danger" onclick="tenks()">Submit</button>
             </div>
         </details>
 
@@ -79,7 +79,11 @@
             <div style="background-color: rgb(24, 24, 24); text-align: center; color: white;">
                 <img src="images.jfif" alt="" style="height: 80%; width: 80%;">
                 <button type="button" class="btn btn-danger" onclick="print()">Ticket Price</button>
+    <br>
+                <button type="button" class="btn btn-primary" onclick="refresh()">Order more</button>
             </div>
+
+
         </details>
     </div>
 
@@ -99,6 +103,10 @@
 
     function print() {
         window.alert ('Thank you for ordering a ticket. Please check your email for the copy');
+    }
+
+    function refresh() {
+        window.location.reload();
     }
 
 </script>
